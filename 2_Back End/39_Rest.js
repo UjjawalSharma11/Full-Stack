@@ -150,3 +150,8 @@ app.get("/posts/:id/edit", (req, res) => {
 })
 
 //  Delete Route: Used for deleting any specific post.
+app.delete("/post/:id", (req, res) => {
+    let {id} = req.params;
+    posts = posts.filter((p) => id !== p.id);
+    res.redirect("/posts");
+})
