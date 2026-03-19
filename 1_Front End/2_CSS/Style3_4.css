@@ -1,0 +1,149 @@
+/* ☑️ PART 3 */
+/*
+- Display: This property can be used make an element of inline or block type.
+- Properties like width and height are only applicable on block level elements. Even if a block element is changed into inline element using display, then also these properties will not work upon it.
+- So if we want features of both then we can set the display as inline-block.
+
+- Relative Units:
+-- %: Used to define size as relative to parent object.
+-- em: Generally used to set properties like font-size relative to parent element. Where as properties like padding, margin is set relative to itself.
+-- rem: Relative to root element.
+*/
+
+/* div {
+    width: 500px;
+    height: 300px; 
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+button {
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    
+} */
+
+/* 🚨 Practice Question */
+/* #parent {
+    height: 200px;
+    width: 70px;
+    border: solid black 2px;  
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 10px;
+} */
+
+
+
+/* ☑️ PART 4 */
+/* 
+- Alpha Channel (Opacity of color): rgba(0-255, 0-255, 0-255, 0-1)
+- Opacity (of the element) 
+
+- Transition: It can be used for making the transition of an element between two states more smoother and animated.
+- Transform: This property let you rotate, scale, skew or translate an element.
+
+- 🔥🔥 Position: Default, Relative, Absolute, Fixed
+
+
+*/
+
+/* div {
+    background-color: rgba(255, 0, 0, 0); 
+    opacity: 0;
+} */
+
+
+/* div {
+    color: white;
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    margin-top: 0px;
+    
+    box-shadow: 2px 2px 8px black;
+    background-image: url("img.jpg");
+    background-size: contain;
+    background-size: cover; */
+
+    /* transition: margin-top 2s ease-in 0.5s; */
+    /* transform: translate(10px, 10px);
+    transition: transform 2s ease-in-out; */
+/* } */
+
+/* div:hover {
+    margin-top: 500px;
+    background-color: red;
+    transform: translateX(250px);
+    transform: rotate(45deg);
+} */
+
+
+/* 🚨 Card Hover Effect */
+/* #parent {
+    height: 200px;
+    width: 200px;
+    border: 2px black solid;
+    box-shadow: 1px 1px 5px black;
+    transition: box-shadow 0.5s ease-in;
+}
+
+img {
+    width: 100%;
+}
+
+.child {
+    background-size: cover;
+}
+
+#parent:hover {
+    box-shadow: 2.5px 2.5px 8px black;
+} */
+
+/* 🚨 Smiley Face */
+/* #face {
+    height: 400px;
+    width: 400px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.leye, .reye {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.reye {
+    left: 250px;
+}
+
+.mouth {
+    width: 200px;
+    height: 75px;
+    background-color: red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+
+} */
+
+

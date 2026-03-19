@@ -1,0 +1,166 @@
+/* ☑️ PART 1 */
+/* 
+- Types of CSS: 
+-- Inline CSS: Use style attribute inside an element.
+-- Internal CSS: Use style tag inside the head.
+-- External CSS: Linking a .css file to .html file. This will apply all the style set in .css file onto our web page.
+
+- Color Systems:
+-- RGB: rgb(0-255, 0-255, 0-255)
+-- Hex Code: #000000-#ffffff
+
+- Units:
+-- Absolute Units: px
+-- Relative Units: %, em, rem, vh(viewport height)
+
+
+- Text-Align: It sets the alignment of an element relative to its parent element.
+- Text-Decoration: It helps in decorating the content with the help of underline and overline.
+- Letter-Spacing: Controls the horizontal spacing between text characters.
+
+*/
+
+/* * {
+    font-family: Tahoma;
+}
+
+h2 {
+    color: red;
+    text-decoration: dashed underline;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.demo {
+    width: 500px;
+    background-color: orange;
+
+}
+
+.demo1 {
+    text-align: center;
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+} */
+
+
+/* 🚨 Practice Question */
+/* div {
+    width: 300px;
+    background-color: grey;
+}
+
+h2 {
+    font-family: Tahoma;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: double underline teal;
+} */
+
+
+
+/* ☑️ PART 2 */
+/* 
+- Selectors: It is used for selecting a element/group of element on which CSS will be applied.
+- ID Selector is used for designing single element. Whereas Class Selector can be used for designing a group of elements.
+- Attribute Selector: We can select an element on the basis of an attribute/attribute-value passed into it.
+- Descendent Selector can be used for selecting an element which is present in some other element at any level. 
+- Sibling Combinator: element1 + element2 -> By this we mean that we want to apply properties on all the element2 that lie just after element1.
+- Child Combinator: element1 > element2 -> By this we mean that we want to apply property on all the element2 that are direct descendent of element1.
+
+- Selector Specicity: It comes into action when multiple selectors select same element for changing same property and we need to figure out changes by which selector will be applied.
+-- inline CSS > id > class > element
+-- More Selectors > Less Selectors
+-- If specificty is same then look which selector was called at the last.
+
+*/
+/* 
+* {
+    font-family: Tahoma;
+    background-color: beige;
+    border-radius: 10%;
+}
+
+h1 {
+    color: #b92b27;
+}
+
+h3 {
+    color: purple;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.up {
+    background-color: green;
+    color: white;  
+}
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    background-color: yellow;
+    color: purple;
+}
+
+nav a {
+    color: blueviolet;
+}
+
+input + input {
+    background-color: white;
+} */
+
+/* Pseudo Selectors: Selecting elements on the basis of the state in which they are. */
+
+/* h1 button:hover {
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.up:active {
+    background-color: yellowgreen;
+}
+
+h3::first-letter {
+    color: plum;
+}
+
+*::selection {
+    background-color: rgb(243, 243, 173);
+} */
+
+
+
+/* .x {
+    background-color: aqua;
+}
+
+#y {
+    background-color: black;
+    color: white;
+} */

@@ -1,0 +1,191 @@
+/* ☑️ PART 5 */
+/* 
+- Flexbox (Flexible Box Layout): It is a one dimensional layout method for arranging items in rows or columns.
+-- It helps in making our website responsive.
+- If flex properties are set along x axis, then x axis will be our main axis. In case if the properties are set across 
+y axis then y axis called as main axis.
+
+- flex-direction property helps in setting the main axis.
+- justify-content property helps in managing the space across the main axis.
+- flex-wrap property sets whether the flex items are forced onto one line or can wrap onto multiple lines.
+- align-items property is used for distributing items along the cross axis.
+-- align-items: baseline, this is used for setting the items across cross axis in such a way that content in every items are aligned similarily.
+
+🚨 justify-content spaces items on the main axis, align-items aligns items on the cross axis, and align-content spaces rows of items on the cross axis.
+- Note that align-content comes into the picture only if wrapping is there (multiple rows).
+
+- Individual Properties:
+-- align-self: It aligns an individual item along the cross axis.
+-- flex-basis: It set some predefined fixed size to a flex item, that will apply automatically on the basis of flex-direction.
+-- flex-grow: It specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+*/
+
+/* #container {
+    height: 800px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black; */
+
+    /* flex-direction: row;
+    display: flex; 
+    justify-content: space-evenly; */
+
+    /* flex-direction: column;
+    display: flex;  
+    justify-content: space-between; */
+    
+    /* 
+    flex-direction: row;
+    display: flex; */
+    /* flex-wrap: wrap;  It will wrap across main axis*/
+    /* flex-wrap: wrap-reverse; It will wrap across the reverse of cross axis*/
+
+    /* flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+    align-content: space-evenly; */
+
+    /* display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    text-align: center;
+} */
+
+/* 
+.red {
+    height: 100px; This will not work
+    flex-basis: 100px;
+    flex-grow: 1;
+} */
+
+/* #container div {
+    height: 100px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+} */
+
+
+/* 🚨 Assignment Q1 */
+/* #container {
+    height: 250px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: beige;
+    border-radius: 10px;
+
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#container div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+} */
+
+
+
+/* ☑️ PART 6: GRID */
+/* 
+- Setting a container's display to grid will make all the children grid items.
+- Grid Template: They define the lines and track sizing. 
+- grid-template-row/column property is used for defining how many rows or columns are going to be formed.
+- row/column-gap is used for setting some space between each grid track.
+- grid-column-start/end: Defines till where a cell is going to be streached.
+
+- justify-item: Align all items in the container horizontally.
+- justify-self: Align any individual item horizontally.
+
+- align-item: Align all items in the continer vertically.
+- align-self: Align any individual item vertically.
+
+*/
+
+/* .container {
+    width: 600px;
+    height: 300px;
+    background-color: beige;
+
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-columns: 120px 120px 120px 120px 120px; 
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px; 
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+
+} */
+
+/* .item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 1px black solid;
+    text-align: center;
+} */
+
+/* .one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
+
+
+/* ☑️ PART 6: ANIMATIONS */
+/* 
+- @keyframes animation_name {definition}
+-- First we need to define the animation using above syntax. Then we need to call it inside the element on which we want that animation should be applied.
+
+
+- Media Queries: It helps in making website responsive.
+  
+
+*/
+
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: xxx;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction: normal; */
+
+    /* animation: xxx 3s ease-in 0s 3 normal; */
+}
+
+/* 
+@keyframes xxx {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 40px;
+    }
+} */
