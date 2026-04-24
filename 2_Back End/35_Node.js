@@ -1,3 +1,19 @@
+/* ☑️
+Language → A system of syntax and rules used to write programs (e.g., JavaScript).
+Library → A collection of reusable functions you call to perform specific tasks (e.g., React).
+Framework → A structured environment that dictates how your application is built and calls your code (e.g., Express.js).
+Package → A distributable bundle of code that can be installed and reused (e.g., via npm).
+Runtime Environment → The system that executes your code and provides necessary resources (e.g., Node.js).
+*/
+
+/* ☑️ Callback Queue vs Call Stack
+In JavaScript, the call stack executes synchronous code one task at a time, 
+while asynchronous operations (like `setTimeout` or `fetch`) are handled outside it and, once completed, their callbacks are placed in queues. 
+There are two main queues: the microtask queue (for Promises and async/await) and the callback queue (for timers and events). 
+The event loop continuously checks if the call stack is empty, and when it is, it first pushes all microtasks to the stack and then processes callback queue tasks one by one, 
+ensuring the correct execution order.
+*/
+
 /* 
 ☑️ Node.js is a JavaScript Runtime Environment, which is used for server side programming.
 It is not a language, library or framework.
@@ -34,7 +50,7 @@ modular, reusable, and easy to maintain.
 
 How it works:
 1. In a file, we store functions or variables inside module.exports.
-2. Node.js wraps the exported content inside an object.
+2. Node.js wraps the exported content inside an object/function/variable.
 3. In another file, require("file_path") loads that object.
 4. We can then access its properties.
 
@@ -51,6 +67,21 @@ index.js.
 */
 // let obj = require("./_Temp");
 // console.log(obj.val(2, 3));
+
+/* ☑️ Importing using require()
+1. let obj = require("./file_name");
+- Imports the entire exported content from the file.
+- Whatever is stored in module.exports is assigned to "obj".
+
+2. let { obj } = require("./file_name");
+- Uses object destructuring to extract a specific property
+named "obj" from the exported object.
+- Works only if module.exports contains a key named "obj".
+
+Key Difference:
+- First → gets full export
+- Second → extracts specific property from export
+*/
 
 /* ☑️ npm (Node Package Manager)
 - npm is the default package manager for Node.js.

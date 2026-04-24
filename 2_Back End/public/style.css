@@ -1,9 +1,15 @@
-/* body {
-    background-color: pink;
-} */
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
 
 
-h1{
+/* h1{
     color: maroon;
 }
 
@@ -13,4 +19,4 @@ h1{
 
 .user{
     font-style: italic;
-}
+} */
