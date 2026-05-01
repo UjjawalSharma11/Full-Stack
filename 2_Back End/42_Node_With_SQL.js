@@ -126,14 +126,27 @@ catch(err){
 connection.end(); */
 
 
-//☑️ Route for getting the total number of counts of user.
+/* ☑️ Route: GET "/"
+- When client visits "/", this route is triggered.
+- SQL Query: SELECT COUNT(*) AS count FROM user
+→ Counts total number of users in database.
+
+- connection.query() executes the query.
+- result[0].count extracts the count value.
+
+- res.render("home1.ejs", { count })
+→ Renders EJS template and passes count dynamically.
+
+- If any error occurs, it is caught and
+"Some error in DB!" is sent as response.
+*/
 app.get("/", (req, res) => {
     let q = `SELECT COUNT(*) AS count FROM user`;
     try{
         connection.query(q, (err, result) => {
             if(err) throw err;
             let count = result[0].count;
-            res.render("home1.ejs", { count });
+            res.render("home1.ejs", {count});
         });
     }
     catch(err){
@@ -142,7 +155,24 @@ app.get("/", (req, res) => {
     }
 })
 
-// Route for fetching credentials of all users.
+
+/* ☑️ Route: GET "/user"
+- When client visits "/user", this route is triggered.
+
+- SQL Query:
+SELECT * FROM user
+→ Fetches all user records from the database.
+
+- connection.query() executes the query.
+
+- The result (array of user objects) is passed directly to the EJS template.
+
+- res.render("user1.ejs", { result })
+→ Renders the template and displays all users.
+
+- If any error occurs, it is caught and
+an error message is sent as response.
+*/
 app.get("/user", (req, res) => {
     let q = `SELECT * FROM user`;
     try{
@@ -156,6 +186,7 @@ app.get("/user", (req, res) => {
         res.send("Some error in DB!");
     }
 })
+
 
 // Route for accepting GET request for edititng the user data.
 app.get("/user/:id/edit", (req, res) => {
